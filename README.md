@@ -10,7 +10,7 @@ If you are unfamiliar with the mathematical concepts and technicallities behind 
 
 Let's see an illustrative example of what kind of results this software can get, and the mathematical context behind them.
 
-![firstExample](./Examples/z^3-1 (origin).PNG "Basins of z^3-1")
+![firstExample](https://github.com/valvarezapa/LCD/blob/main/Examples/z%5E3-1%20(origin).PNG "Basins of z^3-1")
 
 A reader familiar with the theory of iteration of rational maps will soon notice that the previous image corresponds to the basins of attraction of  the attracting *n*-cycles (in this case, just *1*-cycles) of the rational map given by the iteration of complex Newton-Raphson's method over the polynomial *z^3-1*.
 Of course, much more mathematically sophisticated examples can be studied using the algorithms presented here, as is exposed in the *Mathematical Framework of LCD*. 
