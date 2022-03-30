@@ -12,18 +12,22 @@ Let's see an illustrative example of what kind of results this software can get,
 
 ![firstExample](https://github.com/valvarezapa/LCD/blob/main/Examples/z%5E3-1%20(origin).PNG "Basins of z^3-1")
 
-A reader familiar with the theory of iteration of rational maps will soon notice that the previous image corresponds to the basins of attraction of  the attracting *n*-cycles (in this case, just *1*-cycles) of the rational map given by the iteration of complex Newton-Raphson's method over the polynomial *z^3-1*.
-Of course, much more mathematically sophisticated examples can be studied using the algorithms presented here, as is exposed in the *Mathematical Framework of LCD*. 
+A reader familiar with the theory of iteration of rational maps will soon notice that the previous image corresponds to the basins of attraction of  the attracting *n*-cycles (in this case, just *1*-cycles) of the rational map given by the iteration of complex Newton-Raphson's method over the polynomial *z^3-1*. Attending to the colors on the colorbar, note that colors 2, 3 and 4 correspond to the basin of attraction of a root of z^3-1 each, and colors 0 and 1 correspond respectively to the basin of attraction of *n*-cycles (n>1) and the basin of attraction of infinity (repulsive fixed point).
+This gray and black colors do not appear on the graphic. Of course, much more mathematically sophisticated examples can be studied using the algorithms presented here, as is exposed in the *Mathematical Framework of LCD*. 
 
 # How to install
 
 How do I import this collection of algorithms in Julia? Is simply, just execute the following code to install the *LCD* package.
 
-`using Pkg; Pkg.add LCD.jl`
+~~~
+using Pkg; Pkg.add LCD.jl
+~~~
 
 You can also execute this directly in the Pkg> command line. You need to install the package only once. Then, in order to use the algorithms that it contains, just add the following code to load it
 
-`using LCD.jl`
+~~~
+using LCD.jl
+~~~
 
 whenever you want to. Since the algorithms are collected in a module, to invoke a certain *LCD* method, it must always be preceded by the *LCD.* prefix, as we shall see next (and as it appears in the *Basic User Guide*).
 
@@ -35,19 +39,23 @@ The functionality of this module is divided essenially in 3 different sections. 
 
 The first section is kind of a fixed-points-oriented one, and it consists of the basic methods that are used to detect said *n*-cyclic behaviour when a rational map is iterated. The main method of this section is the following:
 
-``
+~~~
+
+~~~
 
 As the name of the method suggests, it is used to compute and plot the basins of attraction of the attracting *n*-cycles of a rational map (given the coefficients of its numerator and denominator) on the given rectangle of the complex plane. Of course, a maximum number of iterations of Lyapunov's method, the maximum period of the detected cycles and a tolerance have to be selected.
 Every basin of attraction of each fixed point has a different color in the graphic, while the points whose orbit converges to an *n*-cycle (*n>1*) or diverges appear in another different color. There are a few different coloring strategies implemented in the code one might follow in order to generate this plots, also taking into account the number of iterations of Lyapunov's method it took for each point to converge, for example.
 Let's see an example of this method's functionality. In the following graphic we can see the basins of attraction of the complex polynomial *z^5-1*, both in a neighborhood of the origin and in a neighborhood of infinity. The black areas are the points whose orbit does not converge to any fixed point.
 
-![example](Examples/z^5-1.png)
+![z^5-1](https://github.com/valvarezapa/LCD/blob/main/Examples/z%5E5-1.PNG "Basins of z^5-1")
 
 Again, in this file only a brief review of the methods is given; for a more specific and in-depth explanation of the functionality of each method one can consult the *Mathematical Framework of LCD*.
 
 The second one of the sections in which this module is divided is devoted to plotting the attracting *n*-cycles as such. The main method of this section is the following:
 
-``
+~~~
+
+~~~
 
 It is used to plot the basins of attraction of each attracting *n*-cycle, with a different color for each fixed point (attracting *1*-cycle) and a different color for each attracting *n*-cycle (*n>1*).  This section also has method to detect and plot the *n*-cycles as such, representing each *n*-cycle with a polygonal on the complex plane whose vertices are the elements of the cycle. The plotting colors are selected in a way that the detected *n*-cycle is clearly visible, as we shall see in the following figure.
 
