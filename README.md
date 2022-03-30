@@ -10,7 +10,7 @@ If you are unfamiliar with the mathematical concepts and technicallities behind 
 
 Let's see an illustrative example of what kind of results this software can get, and the mathematical context behind them.
 
-![example](Examples/img.png)
+![example](Examples/z^3-1 (origin).png)
 
 A reader familiar with the theory of iteration of rational maps will soon notice that the previous image corresponds to the basins of attraction of  the attracting *n*-cycles (in this case, just *1*-cycles) of the rational map given by the iteration of complex Newton-Raphson's method over the polynomial *z^3-1*.
 Of course, much more mathematically sophisticated examples can be studied using the algorithms presented here, as is exposed in the *Mathematical Framework of LCD*. 
@@ -41,7 +41,7 @@ As the name of the method suggests, it is used to compute and plot the basins of
 Every basin of attraction of each fixed point has a different color in the graphic, while the points whose orbit converges to an *n*-cycle (*n>1*) or diverges appear in another different color. There are a few different coloring strategies implemented in the code one might follow in order to generate this plots, also taking into account the number of iterations of Lyapunov's method it took for each point to converge, for example.
 Let's see an example of this method's functionality. In the following graphic we can see the basins of attraction of the complex polynomial *z^5-1*, both in a neighborhood of the origin and in a neighborhood of infinity. The black areas are the points whose orbit does not converge to any fixed point.
 
-![example](Examples/img.png)
+![example](Examples/z^5-1.png)
 
 Again, in this file only a brief review of the methods is given; for a more specific and in-depth explanation of the functionality of each method one can consult the *Mathematical Framework of LCD*.
 
