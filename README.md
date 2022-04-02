@@ -29,9 +29,9 @@ You can also execute this directly in the Pkg> command line. You need to install
 using LCD.jl
 ~~~
 
-whenever you want to. Since the algorithms are collected in a module, to invoke a certain *LCD* method, it must always be preceded by the *LCD.* prefix, as we shall see next (and as it appears in the *Basic User Guide*).
+whenever you want to. Since the algorithms are collected in a module, to invoke a certain *LCD* method, it must always be preceded by the *LCD.* prefix, as we shall see next (and as it appears in the *Quick User Guide*).
 
-Also, you will need to have the Python [Matplotlib](http://matplotlib.org/) library installed in order to use PyPlot, which is used to plot the graphics. You can either do inline plotting with [IJulia](https://github.com/JuliaLang/IJulia.jl), which doesn't require a GUI backend, or use the Qt, wx, or GTK+ backends of Matplotlib (as is shown in the *Basic User Guide*).
+Also, you will need to have the Python [Matplotlib](http://matplotlib.org/) library installed in order to use PyPlot, which is used to plot the graphics. You can either do inline plotting with [IJulia](https://github.com/JuliaLang/IJulia.jl), which doesn't require a GUI backend, or use the Qt, wx, or GTK+ backends of Matplotlib (as is shown in the *Quick User Guide*).
 
 # How to use it
 
