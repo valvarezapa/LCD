@@ -61,9 +61,9 @@ LCD.plotWithCycles_BasinsOfAttraction_Lyapunov(coefficientlistnum,coefficientlis
 
 It is used to plot the basins of attraction of each attracting *n*-cycle, with a different color for each fixed point (attracting *1*-cycle) and a different color for each attracting *n*-cycle (*n>1*).  This section also has method to detect and plot the *n*-cycles as such, representing each *n*-cycle with a polygonal on the complex plane whose vertices are the elements of the cycle. The plotting colors are selected in a way that the detected *n*-cycle is clearly visible, as we shall see in the following figure.
 
-![z^3-2z+2_(origin)](https://github.com/valvarezapa/LCD/blob/main/Examples/2-cycle_(origin).png "Basins of z^3-2z+2")
+![z^3-2z+2_(origin)](https://github.com/valvarezapa/LCD/blob/main/Examples/2-cycle_(origin).PNG "Basins of z^3-2z+2")
 
-![z^3-2z+2_(infinity)](https://github.com/valvarezapa/LCD/blob/main/Examples/2-cycle_(infinity).png "Basins of z^3-2z+2 in a neighborhood of infinity")
+![z^3-2z+2_(infinity)](https://github.com/valvarezapa/LCD/blob/main/Examples/2-cycle_(infinity).PNG "Basins of z^3-2z+2 in a neighborhood of infinity")
 
 In this graphic we can see the basins of attraction of the complex polynomial *z^3-2z+2*, both in a neighborhood of the origin and in a neighborhood of infinity. The black areas are the points whose orbit does not converge to any fixed point. In fact, the black areas we see in these two graphics are the basins of the attracting *2*-cycle [0.0, 1.0]. As one can see in the graphics, the mentioned *2*-cycle is clearly visible in blue.
 
