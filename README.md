@@ -40,7 +40,7 @@ The functionality of this module is divided essenially in 3 different sections. 
 The first section is kind of a fixed-points-oriented one, and it consists of the basic methods that are used to detect said *n*-cyclic behaviour when a rational map is iterated. The main method of this section is the following:
 
 ~~~
-
+LCD.plotBasinsOfAttraction_Lyapunov(coefficientlistnum,coefficientlistden,(-1.5,1.5),(-1.5,1.5),200,1,8;coloringStrat="position")
 ~~~
 
 As the name of the method suggests, it is used to compute and plot the basins of attraction of the attracting *n*-cycles of a rational map (given the coefficients of its numerator and denominator) on the given rectangle of the complex plane. Of course, a maximum number of iterations of Lyapunov's method, the maximum period of the detected cycles and a tolerance have to be selected.
@@ -54,7 +54,7 @@ Again, in this file only a brief review of the methods is given; for a more spec
 The second one of the sections in which this module is divided is devoted to plotting the attracting *n*-cycles as such. The main method of this section is the following:
 
 ~~~
-
+LCD.plotWithCycles_BasinsOfAttraction_Lyapunov(coefficientlistnum,coefficientlistden,(-1.5,1.5),(-1.5,1.5),200,4,8)
 ~~~
 
 It is used to plot the basins of attraction of each attracting *n*-cycle, with a different color for each fixed point (attracting *1*-cycle) and a different color for each attracting *n*-cycle (*n>1*).  This section also has method to detect and plot the *n*-cycles as such, representing each *n*-cycle with a polygonal on the complex plane whose vertices are the elements of the cycle. The plotting colors are selected in a way that the detected *n*-cycle is clearly visible, as we shall see in the following figure.
@@ -67,16 +67,21 @@ In the last section there are a few specific methods implemented to study the *n
 Several iterative methods are supported in this software, such as Newton-Raphson's method, Halley's, Schroeder's, Chebyshev's,... so one can compare the behaviour of cubic polynomials under iteration of these methods.
 An example of this is the following:
 
-![example](Examples/img.png)
+![example](Examples/cubicPolynomials_colorBar.PNG)
 
-This method is specific for Newton-Raphson's method. As in the other methods, a rectangle, and the maximum number of iterations, maximum period of the detected *n*-cycles and a tolerance must be given.
+This method is specific for Newton-Raphson's method. As in the other methods, a rectangle, and the maximum number of iterations, maximum period of the detected *n*-cycles and a tolerance must be given. An example of how to obtain this kind of graphics is the following:
+
+~~~
+LCD.detectCathastrophicBehaviour_cubicPolynomials_Newton((-2.0,2.0),(-2.0,2.0),200,5,8)
+~~~
+
 As we can see in the following images, the areas whose associated polynomials behave "badly" (that is, that present *n*-cyclic behaviour when Newton's method is applied, or that the orbit of some point in the complex plane diverges), despite being relatively small and scattered, are in fact Mandelbrot-like sets.
 Also, each one of this methods has an alternative version in which the areas corresponding to "bad" polynomials are colored by which *n*-cyclic behaviour they present; a color for attracting *2*-cycles, another for *3*-cycles, and so on.
 
-![example](Examples/img.png)
+![example](Examples/cubicPolynomials_distinguishCycles_colorBar.png)
 
 The results are intriguing, as one can see in the figure above.
 
 # Cite this work
 
-This collection of algorithms have been developed by Víctor Álvarez, Luis Javier Hernández, María Teresa Rivas and José Manuel Calcines. If you would like to cite our results in your work, we urge you to cite our paper "*Algorithms for computing attraction basins of a self-map of the Hopf fibration based on Lyapunov functions*" (currently on preprint). You can also download the citation to this repository, which can be found in the *About* section on the right, in the homepage.
+This collection of algorithms have been developed by Víctor Álvarez, Luis Javier Hernández, María Teresa Rivas and José Manuel GarcíaCalcines. If you would like to cite our results in your work, we urge you to cite our paper "*Algorithms for computing attraction basins of a self-map of the Hopf fibration based on Lyapunov functions*" (currently on preprint). You can also download the citation to this repository, which can be found in the *About* section on the right, in the homepage.
