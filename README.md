@@ -1,7 +1,7 @@
 ﻿# Lyapunov Cycle Detector
 
 Welcome to the *LCD* module! We present a collection of algorithms written in Julia Language which you might find very useful when approaching to certain Numerical Analysis problems involving rational maps. This kind of problems arise very often in many different areas of Mathematics and Computing like Complex Dynamics, Fractal Geometry or Algorithmic Methods. For example, when you apply Newton's method (the most currently used method to approximate the solutions of a non-linear equation) to a polynomial, the resulting function you have to iterate is a rational map.
-The basic functionality of this software is to detect attracting *n*-cycles when a complex rational map is iterated, and to plot its basins of attraction on the plane of complex numbers. In order to do this, a new method that relies in great mathematical theorems (such as Birkhoff's Ergodic Theorem and many other results given by Sullivan, recently awarded with the Abel prize) is implemented and described extensively in the *Mathematical Framework of LCD*.
+The basic functionality of this software is to detect attracting *n*-cycles when a complex rational map is iterated, and to plot its basins of attraction on the plane of complex numbers. In order to do this, a new method that relies in great mathematical theorems (such as Birkhoff's Ergodic Theorem and many other results given by Sullivan, recently awarded with the Abel prize) is implemented and described extensively in the *Mathematical Framework of LCD* (currently under development, since most of our results are currently on preprint. It'll be available as soon as possible).
 This collection of algorithms avoid many computational problems that often appears in Numerical Analysis, such as overflows caused by denominators close to zero or indeterminations that appear when the numerator and denominator are both equal to zero.
 This new method (which we will often refer to as *Lyapunov's method*) is focused on detecting attracting *n*-cycles. This approach is more general than some traditional algorithms that compute the basin of attraction of the fixed points of a given rational map. Also, another advantage of the algorithms we present is that they do not need any previous knowledge about the fixed points (nor to compute them beforehand) of the rational map in order to compute the basins of attraction.
 Some of this improvements come with a prize; this collection of algorithms might not be the fastest option to compute only the basins of attraction of fixed points of a rational map, since we want to detect not only the attracting *1*-cycles (fixed points) but also any attracting *n*-cycle. However, we benefit from some built-in Julia macros for Parallel Programming and Multithreading in order to make this algorithms work in a reasonable amount of time.
@@ -17,13 +17,13 @@ This gray and black colors do not appear on the graphic. Of course, much more ma
 
 # How to install
 
-How do I import this collection of algorithms in Julia? Is simply, just execute the following code to install the *LCD* package.
+How do I import this collection of algorithms in Julia? It's simple, just execute the following code to install the *LCD* package.
 
 ~~~
-using Pkg; Pkg.add LCD.jl
+using Pkg; Pkg.add https://github.com/valvarezapa/LCD.jl.git
 ~~~
 
-You can also execute this directly in the Pkg> command line. You need to install the package only once. Then, in order to use the algorithms that it contains, just add the following code to load it
+You can also execute this directly in the Pkg> command line. You need to install the module only once. Then, in order to use the algorithms that it contains, just add the following code to load it
 
 ~~~
 using LCD.jl
@@ -88,4 +88,4 @@ The results are intriguing, as one can see in the figure above.
 
 # Cite this work
 
-This collection of algorithms have been developed by Víctor Álvarez, Luis Javier Hernández, María Teresa Rivas and José Manuel GarcíaCalcines. If you would like to cite our results in your work, we urge you to cite our paper "*Algorithms for computing attraction basins of a self-map of the Hopf fibration based on Lyapunov functions*" (currently on preprint). You can also download the citation to this repository, which can be found in the *About* section on the right, in the homepage.
+This collection of algorithms have been developed by Víctor Álvarez Aparicio, Luis Javier Hernández Paricio, María Teresa Rivas Rodríguez and José Manuel García Calcines. If you would like to cite our results in your work, we urge you to cite our paper "*Algorithms for computing attraction basins of a self-map of the Hopf fibration based on Lyapunov functions*" (currently on preprint). You can also download the citation to this repository, which can be found in the *About* section on the right, in the homepage.
