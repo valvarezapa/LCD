@@ -1,14 +1,8 @@
 cff-version: 1.2.0
-message: "If you find these algorithms useful, we urge you to cite our paper Algorithms for computing attraction basins of a self-map of the Hopf fibration based on Lyapunov functions."
+message: "If you find these algorithms useful, we urge you to cite our paper Algorithms for computing attraction basins of a rational self-map of the Hopf fibration based on Lyapunov exponents."
 authors:
 - family-names: "Álvarez-Aparicio"
   given-names: "Víctor"
-- family-names: "Hernández-Paricio"
-  given-names: "Luis Javier"
-- family-names: "García-Calcines"
-  given-names: "José Manuel"
-- family-names: "Rivas-Rodríguez"
-  given-names: "María Teresa"
 title: "Lyapunov Cycle Detector (LCD.jl)"
 license: MIT
 version: 1.4
