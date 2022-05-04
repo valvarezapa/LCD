@@ -88,4 +88,4 @@ The results are intriguing, as one can see in the figure above.
 
 # Cite this work
 
-This collection of algorithms have been developed by Víctor Álvarez Aparicio, Luis Javier Hernández Paricio, María Teresa Rivas Rodríguez and José Manuel García Calcines. If you would like to cite our results in your work, we urge you to cite our paper "*Algorithms for computing attraction basins of a self-map of the Hopf fibration based on Lyapunov functions*" (currently on preprint). You can also download the citation to this repository, which can be found in the *About* section on the right, in the homepage.
+This collection of algorithms have been developed by Víctor Álvarez Aparicio, Luis Javier Hernández Paricio, María Teresa Rivas Rodríguez and José Manuel García Calcines. If you would like to cite our results in your work, we urge you to cite our paper "*Algorithms for computing attraction basins of a rational self-map of the Hopf fibration based on Lyapunov exponents*" (currently on preprint). You can also download the citation to this repository, which can be found in the *About* section on the right, in the homepage.
