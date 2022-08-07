@@ -1,0 +1,20 @@
+title: "Cycles and Julia Sets: Novel algorithms for Numerical Analysis"
+keywords:
+  - Cycles
+  - Julia sets
+  - Basins of attraction
+  - Dynamical Systems
+  - Lyapunov exponents
+  - Rational maps
+  - Numerical Analysis
+  - Complex Dynamics
+  - Julia Language
+  - Parallel programming
+authors:
+  - name: Víctor Álvarez Aparicio
+    affiliation: 1
+affiliations:
+  - name: University of La Rioja
+    index: 1
+date: 30 July 2022
+bibliography: ref.bib

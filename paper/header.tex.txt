@@ -1,0 +1,8 @@
+% **************GENERATED FILE, DO NOT EDIT**************
+
+\title{Lyapunov Cycle Detector (LCD.jl): A new tool for the study of basins of attraction induced by rational maps}
+
+\author[1]{V. Álvarez-Aparicio}
+\affil[1]{University of La Rioja, Spain}
+
+\keywords{Cycles, Julia sets, Basins of attraction, Dynamical Systems, Lyapunov exponents, Rational maps, Numerical Analysis, Complex Dynamics, Julia Language, Parallel programming}
