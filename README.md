@@ -10,7 +10,7 @@ If you are unfamiliar with the mathematical concepts and technicallities behind 
 
 Let's see an illustrative example of what kind of results this software can get, and the mathematical context behind them.
 
-![firstExample](https://github.com/valvarezapa/LCD/blob/main/Examples/z%5E3-1%20(origin).PNG "Basins of z^3-1")
+![firstExample](https://github.com/valvarezapa/LCD/blob/main/Examples/Newton's%20method/z%5E3-1/z%5E3-1%20(origin).PNG "Basins of z^3-1")
 
 A reader familiar with the theory of iteration of rational maps will soon notice that the previous image corresponds to the basins of attraction of  the attracting *n*-cycles (in this case, just *1*-cycles) of the rational map given by the iteration of complex Newton-Raphson's method over the polynomial *z^3-1*. Attending to the colors on the colorbar, note that colors 2, 3 and 4 correspond to the basin of attraction of a root of z^3-1 each, and colors 0 and 1 correspond respectively to the basin of attraction of *n*-cycles (n>1) and the basin of attraction of infinity (repulsive fixed point).
 This gray and black colors do not appear on the graphic. Of course, much more mathematically sophisticated examples can be studied using the algorithms presented here, as is exposed in the *Mathematical Framework of LCD*. 
@@ -47,9 +47,9 @@ As the name of the method suggests, it is used to compute and plot the basins of
 Every basin of attraction of each fixed point has a different color in the graphic, while the points whose orbit converges to an *n*-cycle (*n>1*) or diverges appear in another different color. There are a few different coloring strategies implemented in the code one might follow in order to generate this plots, also taking into account the number of iterations of Lyapunov's method it took for each point to converge, for example.
 Let's see an example of this method's functionality. In the following graphic we can see the basins of attraction of the complex polynomial *z^5-1*, both in a neighborhood of the origin and in a neighborhood of infinity. The black areas are the points whose orbit does not converge to any fixed point.
 
-![z^5-1_(origin)](https://github.com/valvarezapa/LCD/blob/main/Examples/z^5-1_(origin).PNG "Basins of z^5-1")
+![z^5-1_(origin)](https://github.com/valvarezapa/LCD/blob/main/Examples/Newton's%20method/z%5E5-1/z%5E5-1_(origin).png "Basins of z^5-1")
 
-![z^5-1_(infinity)](https://github.com/valvarezapa/LCD/blob/main/Examples/z^5-1_(infinity).PNG "Basins of z^5-1 in a neighborhood of infinity")
+![z^5-1_(infinity)](https://github.com/valvarezapa/LCD/blob/main/Examples/Newton's%20method/z%5E5-1/z%5E5-1_(infinity).png "Basins of z^5-1 in a neighborhood of infinity")
 
 Again, in this file only a brief review of the methods is given; for a more specific and in-depth explanation of the functionality of each method one can consult the *Mathematical Framework of LCD*.
 
@@ -61,17 +61,17 @@ LCD.plotWithCycles_BasinsOfAttraction_Lyapunov(coefficientlistnum,coefficientlis
 
 It is used to plot the basins of attraction of each attracting *n*-cycle, with a different color for each fixed point (attracting *1*-cycle) and a different color for each attracting *n*-cycle (*n>1*).  This section also has method to detect and plot the *n*-cycles as such, representing each *n*-cycle with a polygonal on the complex plane whose vertices are the elements of the cycle. The plotting colors are selected in a way that the detected *n*-cycle is clearly visible, as we shall see in the following figure.
 
-![z^3-2z+2_(origin)](https://github.com/valvarezapa/LCD/blob/main/Examples/2-cycle_(origin).PNG "Basins of z^3-2z+2")
+![origin](https://github.com/valvarezapa/LCD/blob/main/Examples/Newton's%20method/(z%5E2%2B1)(z-(0.845%2B0.81i))%20%5B2%20-%20CYCLE%5D/2cycle_colorbar.PNG "Basins in a neighborhood of the origin")
 
-![z^3-2z+2_(infinity)](https://github.com/valvarezapa/LCD/blob/main/Examples/2-cycle_(infinity).PNG "Basins of z^3-2z+2 in a neighborhood of infinity")
+![infinity](https://github.com/valvarezapa/LCD/blob/main/Examples/Newton's%20method/(z%5E2%2B1)(z-(0.845%2B0.81i))%20%5B2%20-%20CYCLE%5D/neighborhood_infinity_colorbar.PNG "Basins in a neighborhood of infinity")
 
-In this graphic we can see the basins of attraction of the complex polynomial *z^3-2z+2*, both in a neighborhood of the origin and in a neighborhood of infinity. The black areas are the points whose orbit does not converge to any fixed point. In fact, the black areas we see in these two graphics are the basins of the attracting *2*-cycle [0.0, 1.0]. As one can see in the graphics, the mentioned *2*-cycle is clearly visible in blue.
+In this graphic we can see the basins of attraction of the complex polynomial *(z^2+1)(z-(0.845+0.81i))*, both in a neighborhood of the origin and in a neighborhood of infinity. The black areas are the points whose orbit does not converge to any fixed point. In fact, the black areas we see in these two graphics are the basins of an attracting *2*-cycle. As one can see in the graphics, the mentioned *2*-cycle is clearly visible in blue.
 
 In the last section there are a few specific methods implemented to study the *n*-cyclic behaviour that appears in cubic polynomials when some iterative method is applied. This generates pretty interesting images, in which one can clearly see the fractal structure of the regions associated with those polynomials that behave "badly" (that is, that presents some attracting *n*-cycles when a given iterative method is applied). For a more technical explanation and mathematical justifications (which involve results given by Fatou and the Scaling Theorem) for the complex parameter space that is considered in the algorithms of this section in order to study the behaviour of cubic polynomials, we again refer the reader to the *Mathematical Framework of LCD*. Also, similar studies of complex parameter spaces associated with cubic polynomials can be found in the literature for many different iterative methods. A few of them can be found in the references of *Mathematical Framework of LCD*.
 Several iterative methods are supported in this software, such as Newton-Raphson's method, Halley's, Schroeder's, Chebyshev's,... so one can compare the behaviour of cubic polynomials under iteration of these methods.
 An example of this is the following:
 
-![cubicPolynomials_Newton](https://github.com/valvarezapa/LCD/blob/main/Examples/cubicPolynomials_colorBar.PNG)
+![cubicPolynomials_Newton](https://github.com/valvarezapa/LCD/blob/main/Examples/Newton's%20method/Parameter%20plane%20of%20cubic%20polynomials%20%5BDynamical%20Study%5D/parameter_plane_cubicPolynomials.PNG)
 
 This method is specific for Newton-Raphson's method. As in the other methods, a rectangle, and the maximum number of iterations, maximum period of the detected *n*-cycles and a tolerance must be given. An example of how to obtain this kind of graphics is the following:
 
@@ -82,7 +82,7 @@ LCD.detectCathastrophicBehaviour_cubicPolynomials_Newton((-2.0,2.0),(-2.0,2.0),2
 As we can see in the following images, the areas whose associated polynomials behave "badly" (that is, that present *n*-cyclic behaviour when Newton's method is applied, or that the orbit of some point in the complex plane diverges), despite being relatively small and scattered, are in fact Mandelbrot-like sets.
 Also, each one of this methods has an alternative version in which the areas corresponding to "bad" polynomials are colored by which *n*-cyclic behaviour they present; a color for attracting *2*-cycles, another for *3*-cycles, and so on.
 
-![cubicPolynomials_cycles_Newton](https://github.com/valvarezapa/LCD/blob/main/Examples/cubicPolynomials_distinguishCycles_colorBar.png)
+![cubicPolynomials_cycles_Newton](https://github.com/valvarezapa/LCD/blob/main/Examples/Newton's%20method/Parameter%20plane%20of%20cubic%20polynomials%20%5BDynamical%20Study%5D/topRight_1bulb_2cycles.png)
 
 The results are intriguing, as one can see in the figure above.
 
