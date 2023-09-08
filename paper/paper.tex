@@ -1,7 +1,6 @@
 
 % JuliaCon proceedings template
 \documentclass{juliacon}
-\usepackage{minted}
 \setcounter{page}{1}
 
 \begin{document}
@@ -24,13 +23,13 @@ In the Lyapunov Cycle Detector (LCD.jl) package \cite{alvarez}, we include the i
 Thanks to this approach, the benefits that this newly implemented algorithms provide have lead to better results both numerically (avoiding the previously mentioned computational problems) and computationally (in terms of efficiency and execution time) in comparison with other algorithms that have been developed by the authors, see \cite{julia}, \cite{lj}, \cite{sage}.\\
 
 \textit{Usage}. In the Lyapunov Cycle Detector repository one can find multiple methods for many different purposes, such as iterating the Hopf-endomorphism associated to a given rational map or approximating the Lyapunov function described in \cite{preprint}. However, the main functionality of this package is to compute and visualize the basins of attraction of a complex rational map. This can be achieved through the following method:
-\begin{minted}{julia}
+\begin{verbatim}
 gra=LCD.plotBasinsOfAttraction_Lyapunov(coefnum,
     coefden,(-1.5,1.5),(-1.5,1.5),200,1,8;
     coloringStrat="position",inverted=false)
 img=gra[1]
 numColors=gra[2]
-\end{minted}
+\end{verbatim}
 where \textit{coefnum} and \textit{coefden} contain the coefficients of the numerator and denominator of the rational map respectively, the considered region of the complex plane $\mathbb{C}$ is $(-1.5,1.5)\times(-1.5,1.5)$, $200$ is the maximum number of iterations allowed, $1$ is the maximum length of the $n$-cycles we want to compute, $8$ corresponds to the considered tolerance ($10^{-8}$), and \textit{coloringStrat} and \textit{inverted} determine how the basins are visualized.
 
 In the two previous images we can see the resulting graphs of this method, considering \textit{inverted} as \textit{false} or \textit{true} respectively.
@@ -52,3 +51,4 @@ In the two previous images we can see the resulting graphs of this method, consi
 \end{document}
 
 % Inspired by the International Journal of Computer Applications template
+
