@@ -17,13 +17,13 @@ This gray and black colors do not appear on the graphic. Of course, much more ma
 
 # How to install
 
-How do I import this collection of algorithms in Julia? It's simple, just execute the following code to install the *LCD* package.
+How do I import this collection of algorithms in Julia? It's simple, just execute the following code in the Pkg> command line to install the *LCD* package.
 
 ~~~
-using Pkg; Pkg.add(url="https://github.com/valvarezapa/LCD.jl.git")
+add https://github.com/valvarezapa/LCD
 ~~~
 
-You can also execute this directly in the Pkg> command line. You need to install the module only once. It is *REALLY IMPORTANT* to note that the presented module has 3 dependencyies: *Polynomials.jl*, *Colors.jl* and *PyPlot*. Also, this package was developed with *Julia 1.6.4*, so with later versions some methods could not work. In order to use the algorithms that the module contains, just add the following code to load it
+You need to install the module only once. It is *REALLY IMPORTANT* to note that the presented module has 3 dependencies: *Polynomials.jl*, *Colors.jl* and *PyPlot*. Also, this package was developed with *Julia 1.6.4*, so with later versions some methods could not work. In order to use the algorithms that the module contains, just add the following code to load it
 
 ~~~
 using LCD.jl
