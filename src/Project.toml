@@ -1,5 +1,5 @@
 authors = ["Víctor Álvarez Aparicio <valvarezaparicio@gmail.com>"]
-name = "LCD"
+name = "LyapunovCycleDetector.jl"
 uuid = "182613a9-18b6-4b88-b4d2-68357530d9e1"
 version = "1.0.0"
 
