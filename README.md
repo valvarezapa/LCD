@@ -35,6 +35,8 @@ Also, you will need to have the Python [Matplotlib](http://matplotlib.org/) libr
 
 # How to use it
 
+We strongly recommend to read the *LCD Quick User Guide* in order to get started with the functionalities of the *LCD* module. However, here we present a brief summary:
+
 The functionality of this module is divided essenially in 3 different sections. The code of the first one (which is the central one) is used in the other 2 sections, but in terms of functionality all of them serve different purposes and can be used independently.
 
 The first section is kind of a fixed-points-oriented one, and it consists of the basic methods that are used to detect said *n*-cyclic behaviour when a rational map is iterated. The main method of this section is the following:
