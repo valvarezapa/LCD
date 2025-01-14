@@ -1,4 +1,4 @@
-include("LyapunovCycleDetector.jl")
+include("LCD.jl")
 
 using PyPlot
 using Images
